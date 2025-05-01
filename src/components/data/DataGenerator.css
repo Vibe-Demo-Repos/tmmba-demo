@@ -1,0 +1,129 @@
+.data-generator {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.control-panel {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.generate-button, .export-button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.generate-button {
+  background-color: var(--primary-purple);
+  color: white;
+}
+
+.generate-button:hover {
+  background-color: #3a2266;
+}
+
+.export-button {
+  background-color: white;
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+
+.export-button:hover {
+  background-color: var(--light-purple);
+}
+
+.generate-button:disabled, .export-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.data-preview h3 {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.data-table th, .data-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.data-table th {
+  background-color: var(--light-purple);
+  font-weight: 600;
+  color: var(--primary-purple);
+  position: sticky;
+  top: 0;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f8fc;
+}
+
+.data-table tr:hover {
+  background-color: #f0edf7;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: white;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: var(--light-purple);
+  border-color: var(--primary-purple);
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  color: #666;
+  font-style: italic;
+  border: 1px dashed var(--border-light);
+  border-radius: 6px;
+}
